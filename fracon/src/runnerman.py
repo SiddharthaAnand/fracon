@@ -30,3 +30,12 @@ def deserialize(_config=None):
     print('recon._ticket - ', recons._ticket)
     print('recon._run - ', recons.run())
     print('recon._run - ', recons._kargs)
+
+
+def main():
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], 'r') as _config:
+            deserialize(_config=_config)
+    else:
+        print('\t\tUsage : python fracon/src/runnerman.py fracon/configuration/serialized_config')
+        sys.exit(1)
