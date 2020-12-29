@@ -1,0 +1,49 @@
+{
+    "_postman": {
+        "_from": "siddharthalibra13@gmail.com",
+        "_to": "siddharthalibra13@gmail.com",
+        "_subject": "Hello siddy boy",
+        "_body": "How are you? The frameowrk is coming up pretty good."
+    },
+    "_initial_query": {
+        "_name": "query to get the number of planets",
+        "_select": "diameter",
+        "_from": "planets",
+        "_where": "radius > 10000000",
+        "_kargs": {
+            "group_by": "",
+            "_having": ""
+        }
+    },
+    "_suppression_query": {
+        "_name": "query to get planets outside solar system",
+        "_select": "*",
+        "_from": "universe",
+        "_where": "radius > 1000000",
+        "_kargs": {
+            "group_by": "",
+            "_having": ""
+        }
+    },
+    "_preferences_query": {
+        "_name": "query to get blue planets",
+        "_select": "*",
+        "_from": "universe",
+        "_where": "radius > 10000000",
+        "_kargs": {
+            "group_by": "",
+            "_having": ""
+        }
+    },
+    "kargs": {
+        "_name": "extra params",
+        "_select": "",
+        "_from": "",
+        "_where": "",
+        "group_by": "",
+        "_having": ""
+    },
+    "_ticketman": {
+        "_name": "jira ticket"
+    }
+}
